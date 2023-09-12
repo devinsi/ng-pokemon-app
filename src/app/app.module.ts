@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PokemonTypeColorPipe } from './pokemon-type-color.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PokemonTypeColorPipe
   ],
   imports: [
     BrowserModule,
