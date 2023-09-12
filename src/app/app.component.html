@@ -1,8 +1,8 @@
-<h1 class="center">Liste de pokemons</h1>
+<h1 class="center">Pokemons</h1>
 <div class="container">
     <div class="row">    
         <div *ngFor="let pokemon of pokemonList" class="col s6 m4" >    
-            <div class="card horizontal">
+            <div class="card horizontal" pkmBorderCard>
                 <div class="card-image">
                     <img [src]="pokemon.picture">
                 </div>
