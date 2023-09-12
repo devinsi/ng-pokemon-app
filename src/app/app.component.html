@@ -9,7 +9,7 @@
                 <div class="card-stacked">
                     <div class="card-content">
                         <p>{{pokemon.name}}</p>  
-                        <p>{{pokemon.created}}</p>
+                        <p><small>{{pokemon.created | date:"mm LLL yyyy"  | uppercase}}</small></p>
                     </div>
                 </div> 
             </div>
