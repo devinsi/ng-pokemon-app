@@ -12,6 +12,23 @@ export class PokemonService {
   }
 
   getPokemonById(pokemonId: number): Pokemon|undefined {
-    return POKEMONS.find(Pokemon => pokemon.id == pokemonId);
+    return POKEMONS.find(Pokemon => Pokemon.id == pokemonId);
   }
+
+  getPokemonTypeList(): string[] {
+    return [
+      'Plante', 
+      'Feu', 
+      'Eau', 
+      'Insecte', 
+      'Normal', 
+      'Electric', 
+      'Poisson', 
+      'Fée', 
+      'Vol', 
+      'Combat', 
+      'Psy'
+    ];
+  }
+
 }
