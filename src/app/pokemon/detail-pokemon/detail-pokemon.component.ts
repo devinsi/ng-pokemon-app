@@ -20,11 +20,9 @@ export class DetailPokemonComponent {
     ){}
 
   ngOnInit(): void{
-    this.pokemonList = this.pokemonService.getPokemonList();
-    // Récupère l'id depuis le routeur à l'instant t
-    const pokemonId: string|null = this.route.snapshot.paramMap.get('id');
+    const pokemonId: string|null = this.route.snapshot.paramMap.get('id'); // Récupère l'id depuis le routeur à l'instant t
       if(pokemonId){
-        this.pokemon = this.pokemonList.find(pokemon => pokemon.id == +pokemonId);
+        this.pokemon = this.pokemonService.getPokemonById(+pokemonId);
       }
     }
     goToPokemonList() {
